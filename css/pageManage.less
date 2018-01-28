@@ -1,0 +1,171 @@
+.page-manage {
+  height: 100%;
+
+  .content {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    padding-top: 83px;
+    padding-left: 180px;
+    background-color: #eceff3;
+    // overflow: hidden;
+    box-sizing: border-box;
+
+    h2 {
+      font-size: 18px;
+      color: #555;
+      padding-left: 10px;
+      border-left: 3px solid #09C;
+    }
+
+    .operate {
+      padding-top: 30px;
+      overflow: hidden;
+
+      .add {
+          float: left;
+
+          a {
+            display: inline-block;
+            color: #333;
+            text-decoration: none;
+            height: 30px;
+            line-height: 30px;
+
+            i {
+              display: inline-block;
+              width: 15px;
+              height: 15px;
+              text-align: center;
+              line-height: 15px;
+              // border: 1px solid #000;
+              font-style: normal;
+              color: #fff;
+              background-color: #aaa;
+            }
+
+          }
+
+      }
+
+      .search {
+        float: left;
+        margin-left: 30px;
+
+        .sheet {
+          float: left;
+
+          input {
+            height: 30px;
+            box-sizing: border-box;
+            padding: 10px;
+            outline: none;
+          }
+
+        }
+
+        .action {
+          float: left;
+
+          button {
+            width: 50px;
+            height: 30px;
+          }
+
+        }
+
+      }
+
+    }
+
+    .info {
+      padding-top: 40px;
+
+      table {
+        border: 1px solid #bbb;
+        font-size: 14px;
+        text-align: center;
+
+        tr {
+
+          th {
+            width: 10%;
+            height: 40px;
+            border-left: 1px solid #bbb;
+            // color: #fff;
+            font-size: 16px;
+            font-weight: normal;
+            // background-color: #9badb2;
+
+            &:first-child {
+              border-left: none;
+            }
+
+          }
+
+          td {
+            padding: 5px 0;
+            height: 30px;
+            border-top: 1px solid #bbb;
+            border-left: 1px solid #bbb;
+            color: #444;
+
+            &:first-child {
+              border-left: none;
+            }
+
+            &.btn {
+              overflow: hidden;
+
+              .delete {
+                float: left;
+                margin-left: 40px;
+
+                &:hover {
+                  cursor: pointer;
+                }
+
+              }
+
+              .edit {
+                float: left;
+                margin-left: 10px;
+              }
+
+              .add {
+                display: none;
+              }
+
+            }
+
+          }
+
+          &.s1 {
+            background-color: #fff;
+          }
+
+        }
+
+      }
+
+    }
+
+  }
+
+}
+
+.older-manage {
+
+  td {
+
+    .delete, .add, .edit {
+      display: block !important;
+      float: left;
+      margin:0 4px !important;
+    }
+
+  }
+
+}

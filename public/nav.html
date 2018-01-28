@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>导航</title>
+  <link rel="stylesheet" href="../css/main.css">
+</head>
+<body>
+  <div class="page-nav">
+    <ul class="nav" id="J-nav">
+      <li class="nav_item">
+        <p>
+          <a href="../index.html" target="_top">
+            <i></i>
+            <span>用户管理</span>
+          </a>
+        </p>
+      </li>
+    </ul>
+  </div>
+  <script type="text/javascript" src="../js/jquery-2.1.4.min.js"></script>
+  <script type="text/javascript">
+    var type ="manage";
+    var arr_mean_manage = ['用户管理', '员工管理', '老人管理', '床位管理', '日常饮食管理', '费用管理']
+    var arr_src_manage = ['../userManage.html','../staffManage.html', '../olderManage.html', '../bedManage.html', '../foodManage.html', '../feeManage.html'];
+    var arr_mean_staff = ['个人信息', '床位信息', '老人信息']
+    var arr_src_staff = ['../addStaff.html','../bedManage.html', '../olderManage.html'];
+    if(type == 'manage') {
+      for(var i = 0; i < arr_mean_manage.length; i++) {
+        var $li = $('#J-nav').find('li:first').clone().show();
+        $li.appendTo($('#J-nav'))
+        $li.find('p a').attr('href', arr_src_manage[i]);
+        $li.find('p a span').html(arr_mean_manage[i]);
+      }
+    }
+
+    if(type == 'staff') {
+        for(var i = 0; i < arr_mean_staff.length; i++) {
+          var $li = $('#J-nav').find('li:first').clone().show();
+          $li.appendTo($('#J-nav'))
+          $li.find('p a').attr('href', arr_src_staff[i]);
+          $li.find('p a span').html(arr_mean_staff[i]);
+        }
+      }
+
+  </script>
+</body>
+</html>
